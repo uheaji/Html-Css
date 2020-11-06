@@ -1,0 +1,15 @@
+footer{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__01{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__01 span{
+    margin-left: 10px;
+}
+

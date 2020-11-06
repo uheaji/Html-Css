@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            header{
+                background-color: pink;
+                height: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: white;
+                font-size: 40px;
+                font-weight: 900;
+            }
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            li{
+                width: 300px;
+                list-style-type: none;
+            }
+
+            nav{
+                background-color: orange;
+            }
+
+            nav a{
+                display: inline-block;
+                padding: 20px 0;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            nav a:hover {
+                background-color: rgba(230, 152, 8, 0.863);
+            }
+
+            .submenu{
+                position: relative;
+            }
+            .dropdown{
+                position: absolute;
+                display: none;
+            }
+            .submenu > a:hover + .dropdown{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            COS
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li class="submenu">
+                    <a href="#">JAVASCRIPTs</a>
+                   <div class="dropdown">
+                       <div>Link 1</div>
+                       <div>Link 2</div>
+                       <div>Link 3</div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
