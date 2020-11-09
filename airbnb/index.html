@@ -19,32 +19,34 @@
                 </ul>
                 </div>
             </nav>
-            <section>
 
+            <section>
                 <div class="serch-form">
-                    <div>특색있는 숙소와 즐길거리를 예약하세요</div>
-                    <table>
+                    <div class="form__title">특색있는 숙소와 즐길거리를 예약하세요</div>
+                    <div>
+                    <table class="form__table">
                         <tr>
-                            <td colspan="2">목적지</td>
+                            <td class="form_font" colspan="2">목적지</td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="text" placeholder="모든위치"></td>
+                            <td colspan="2"><input class="form__input" type="text" placeholder="모든위치"></td>
                         </tr>
                         <tr>
-                            <td>체크인</td>
-                            <td>체크아웃</td>
+                            <td class="form_font">체크인</td>
+                            <td class="form_font">체크아웃</td>
                         </tr>
                         <tr>
-                            <td><input type="date"></td>
-                            <td><input type="date"></td>
+                            <td><input class="form__input" type="date"></td>
+                            <td><input class="form__input" type="date"></td>
                         </tr>
                         <tr>
-                            <td colspan="2">인원</td>
+                            <td class="form_font" colspan="2">인원</td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="" placeholder="인원"></td>
+                            <td colspan="2"><input class="form__input"  type="" placeholder="인원"></td>
                         </tr>
                     </table>
+                    </div>
                     <button>검색</button>
                 </div>
             </section>
@@ -57,26 +59,26 @@
                 <div class="section1-container">
                     <div class="section1__picture">
                         <div><img src="images/card1.jpg" width="50%"/></div>
-                        <div>숙소 및 부티크 호텔</div>
+                        <div class="card1__name">숙소 및 부티크 호텔</div>
                     </div>
                     <div class="section1__picture">
                         <div><img src="images/card2.jpg" width="50%" /></div>
-                        <div>트랩</div>
+                        <div class="card1__name">트랩</div>
                     </div>
                     <div class="section1__picture">
                         <div><img src="images/card3.jpg"  width="50%"/></div>
-                        <div>어드벤쳐</div>
+                        <div class="card1__name">어드벤쳐</div>
                     </div>
                     <div class="section1__picture">
                         <div><img src="images/card4.jpg" width="50%"/></div>
-                        <div>레스토랑</div>
+                        <div class="card1__name">레스토랑</div>
                     </div>
                 </div>
             </section>
 
             <!-- 두번째 섹션 -->
             <section>
-                <div><img src="images/ad1.jpg" style="border-radius: 20px;" width="100%"></div>
+                <div><img src="images/ad1.jpg" style="border-radius: 20px; margin-top: 40px; margin-bottom: 30px;" width="100%"></div>
             </section>
 
             <!-- 세번째 섹션 -->
@@ -95,7 +97,7 @@
             <section>
                 <div class="l-title">에어비앤비 플러스를 만나보세요! </div>
                 <div class="s-title">퀄리티와 인테리어 디자인이 검증된 숙소 셀렉션</div>
-                <div><img src="images/ad2.png" width="100%"></div>
+                <div><img src="images/ad2.png" width="100%" style="margin-top: 20px; margin-bottom: 20px;"></div>
             </section>
 
             <!-- 다섯번째 섹션 -->
@@ -105,104 +107,103 @@
                 <div class="home-box">
                     <!-- home1 -->
                     <div class="home-item">
-                        <div><img src="images/home1.png" alt=""></div>
+                        <div><img src="images/home1.png"></div>
+                        <div class="home-item-name">
                         <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                            BALIAN TREEHOUSE w beautiful pool
-                        </div>
+                        <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
                         <div>
-                            <span></span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <span class="xxs-title">185 슈퍼호스트</span>
                         </div>
+                        </div>
+                    </div>
                         <!-- home2 -->
-                    <div class="home-item">
-                        <div><img src="images/home2.png" alt=""></div>
-                        <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                            BALIAN TREEHOUSE w beautiful pool
-                        </div>
-                        <div>
-                            <span>별별별별별</span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
-                        </div>
+                        <div class="home-item">
+                            <div><img src="images/home2.png"></div>
+                            <div class="home-item-name">
+                            <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
+                            <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
+                            <div>
+                                <span>⭐⭐⭐⭐⭐</span>
+                                <span class="xxs-title">185 슈퍼호스트</span>
+                            </div>
+                            </div>
+                        </div>  
+            
                        <!-- home3-->
-                    <div class="home-item">
-                        <div><img src="images/home3.png" alt=""></div>
+                       <div class="home-item">
+                        <div><img src="images/home3.png"></div>
+                        <div class="home-item-name">
                         <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                            BALIAN TREEHOUSE w beautiful pool
-                        </div>
+                        <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
                         <div>
-                            <span>별별별별별</span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <span class="xxs-title">185 슈퍼호스트</span>
                         </div>
+                        </div>
+                    </div>
                        <!-- home4-->
-                     <div class="home-item">
-                        <div><img src="images/home4.png" alt=""></div>
+                       <div class="home-item">
+                        <div><img src="images/home4.png"></div>
+                        <div class="home-item-name">
                         <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                                    BALIAN TREEHOUSE w beautiful pool
-                        </div>
-                      <div>
-                             <span>별별별별별</span>
-                             <span>185</span>
-                             <span>슈퍼호스트</span>
-                         </div>
-                         <!-- home5-->
-                      <div class="home-item">
-                         <div><img src="images/home5.png" alt=""></div>
-                         <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                         <div class="m-title">
-                              BALIAN TREEHOUSE w beautiful pool
-                         </div>
-                         <div>
-                         <span>별별별별별</span>
-                         <span>185</span>
-                         <span>슈퍼호스트</span>
-                         </div>
-                         <!-- home6-->
-                    <div class="home-item">
-                        <div><img src="images/home6.png" alt=""></div>
-                        <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                                            BALIAN TREEHOUSE w beautiful pool
-                        </div>
+                        <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
                         <div>
-                            <span>별별별별별</span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <span class="xxs-title">185 슈퍼호스트</span>
+                        </div>
+                        </div>
+                    </div>
+                         <!-- home5-->
+                         <div class="home-item">
+                            <div><img src="images/home5.png"></div>
+                            <div class="home-item-name">
+                            <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
+                            <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
+                            <div>
+                                <span>⭐⭐⭐⭐⭐</span>
+                                <span class="xxs-title">185 슈퍼호스트</span>
+                            </div>
+                            </div>
+                        </div>
+                         <!-- home6-->
+                         <div class="home-item">
+                            <div><img src="images/home6.png"></div>
+                            <div class="home-item-name">
+                            <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
+                            <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
+                            <div>
+                                <span>⭐⭐⭐⭐⭐</span>
+                                <span class="xxs-title">185 슈퍼호스트</span>
+                            </div>
+                            </div>
                         </div>
                          <!-- home7 -->               
-                    <div class="home-item">
-                        <div><img src="images/home7.png" alt=""></div>
-                        <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                            BALIAN TREEHOUSE w beautiful pool
-                        </div>
-                        <div>
-                            <span>별별별별별</span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
+                         <div class="home-item">
+                            <div><img src="images/home7.png"></div>
+                            <div class="home-item-name">
+                            <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
+                            <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
+                            <div>
+                                <span>⭐⭐⭐⭐⭐</span>
+                                <span class="xxs-title">185 슈퍼호스트</span>
+                            </div>
+                            </div>
                         </div>
                         <!-- home8-->
-                    <div class="home-item">
-                        <div><img src="images/home8.png" alt=""></div>
-                        <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
-                        <div class="m-title">
-                            BALIAN TREEHOUSE w beautiful pool
+                        <div class="home-item">
+                            <div><img src="images/home8.png"></div>
+                            <div class="home-item-name">
+                            <div class="xs-title">오두막  BALIAN BEACH, BALL</div>
+                            <div class="m-title">BALIAN TREEHOUSE w beautiful pool</div>
+                            <div>
+                                <span>⭐⭐⭐⭐⭐</span>
+                                <span class="xxs-title">185 슈퍼호스트</span>
+                            </div>
+                            </div>
                         </div>
-                        <div>
-                            <span>별별별별별</span>
-                            <span>185</span>
-                            <span>슈퍼호스트</span>
-                        </div>
-
                        
-                    </div>
-                </div>
+                 
             </section>
         </main>
     </body>
