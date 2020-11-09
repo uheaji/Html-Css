@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAFAFA;
+    padding: 0 250px;
+}
+
+.line{
+    background-color: rgba(182, 179, 179, 0.87);
+    opacity: 0.3;
+}
+
+.font01 {
+    font-size: 17px;
+}
+
+.font02 {
+    font-size: 14px;
+    font-weight: 900;
+}
