@@ -56,7 +56,7 @@
 
 .profile__main .profile__container2 {
     display: grid;
-    grid-gap:23px ;
+    grid-gap:20px ;
     grid-template-columns: 1fr 1fr 1fr;
 
     margin-top: 20px;
@@ -64,24 +64,54 @@
 }
 
 
-.profile__main .profile__container2 > div > a > img{
-    
-
-    width: 240px;
-    height: 240px;
+.profile__main .profile__container2 > div {
+    position: relative;
 }
 
-.profile__main .profile__container2 > div .profile__hover {
-    width: 240px;
-    height: 240px;
-
-  
-    
-
-    text-align: center;
-    
-
+.profile__main .profile__container2 > div:hover .profile__hover{
+    display: block;
 }
+
+
+.profile__main .profile__container2 > div > a > img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.profile__hover {
+    
+    width: 100%;
+    height:  100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+}
+
+.profile__hover > span {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+.profile__hover > span > i{
+    margin: 0 10px;
+}
+
 
 
 

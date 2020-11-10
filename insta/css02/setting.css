@@ -1,0 +1,51 @@
+.setting__box {
+    border: 2px solid #EAEAEA;
+    border-radius: 1px;
+    background-color: #ffffff;
+
+    margin-top: 30px;
+    
+}
+
+.setting__table{
+    width: 90%;
+    padding-left: 10%;
+}
+
+.setting__title01 {
+    font-size: 15px;
+    font-weight: 800;
+    text-align: end;
+}
+
+.setting__title02 {
+    font-size: 7px;
+    font-weight: 800;
+    color: #afafaf;
+    width: 60%;
+}
+
+.setting__input {
+    border: 2px solid #ECECEC;
+    border-radius: 1px;
+    height: 35px;
+    width: 70%;
+}
+
+.setting__input2 {
+    border: 2px solid #ECECEC;
+    border-radius: 1px;
+    height: 70px;
+    width: 70%;
+}
+
+.setting__item1{
+    display: flex;
+    padding: 30px 150px;
+}
+
+.setting__item1 > div >img{  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
