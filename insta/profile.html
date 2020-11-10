@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css02/style02.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Instagram</title>
 </head>
 
@@ -32,7 +36,7 @@
                         <span class="font02">140</span>
                     </span>
                     <span>
-                        <span class="font01"><a href="#">팔로우</a></span>
+                        <span class="font01" data-toggle="modal" data-target="#myModal"><a href="#">팔로우</a></span>
                         <span class="font02">138</span>
                     </span>
                 </div>
@@ -106,30 +110,29 @@
         </section>
     </main>
 
-    <div class="profile__container3">
-        <div class="black"></div>
-        <div class="popup__box">
-            <div class="popup__box01">
-                <div>팔로잉</div>
-                <div><i class="material-icons">clear</i></div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-            <div class="popup__box02">
-                <div>사람</div>
-                <div>해시태그</div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
             </div>
-            <div class="popup__box03">
-                <ul>
-                    <li>
-                        <div>이미지</div>
-                        <div>
-
-                        </div>
-                        <div></div>
-                    </li>
-                </ul>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
+            
+          </div>
         </div>
-    </div>
+      </div>
 
 
     <footer class="footer">

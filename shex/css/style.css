@@ -83,11 +83,18 @@
 .main .main__right .right__img{
     max-height: initial;
     margin-top: -250px;
-}
-
-.main .main__right .rigth__num{
-    background-color: white;
     
 }
+
+.right__num {
+    position: absolute;
+    padding:30px 40px;
+
+    margin-left: 150px;
+    margin-top: -70px;
+
+    background-color: white;
+}
+
 
 
