@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css02/style02.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Instagram</title>
 </head>
 
@@ -22,9 +18,8 @@
             <div class="profile__item2">
                 <div class="profile__name">
                     <span class="profile__name1">u_heaji</span>
-                    <span class="profile__name2"><a href="#">프로필 편집</a></span>
-                    <span class="profile__name3"><a href="setting.html"><i
-                                class="material-icons">settings</i></a></span>
+                    <span class="profile__name2"><a href="setting.html">프로필 편집</a></span>
+                    <span class="profile__name3"><a href="#"><i class="material-icons">settings</i></a></span>
                 </div>
                 <div class="profile__state">
                     <span>
@@ -36,7 +31,7 @@
                         <span class="font02">140</span>
                     </span>
                     <span>
-                        <span class="font01" data-toggle="modal" data-target="#myModal"><a href="#">팔로우</a></span>
+                        <span class="font01"><a class="trigger" href="#">팔로우</a></span>
                         <span class="font02">138</span>
                     </span>
                 </div>
@@ -110,29 +105,67 @@
         </section>
     </main>
 
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-          
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <div class="modal-title">팔로잉</div>
+                <div class="close-button"><i class="material-icons">clear</i></div>
             </div>
-            
-            <!-- Modal body -->
+            <hr class="modal-line" />
+            <div class="modal-nav">
+                <div class="modal_nav1">사람</div>
+                <div class="modal_nav2">해시태그</div>
+            </div>
+            <hr class="modal-line" />
             <div class="modal-body">
-              Modal body..
+                <ul>
+                    <li class="follow-list">
+                        <div><img src="images/picture01.jpeg"></div>
+                        <div class="follow-name">
+                            <h5>u_heaji</h5>
+                            <p>유혜지</p>
+                        </div>
+                        <div class="follow-button"><button>팔로잉</button></div>
+                    </li>
+                    <li class="follow-list">
+                        <div><img src="images/picture01.jpeg"></div>
+                        <div class="follow-name">
+                            <h5>u_heaji</h5>
+                            <p>유혜지</p>
+                        </div>
+                        <div class="follow-button"><button>팔로잉</button></div>
+                    </li>
+                    <li class="follow-list">
+                        <div><img src="images/picture01.jpeg"></div>
+                        <div class="follow-name">
+                            <h5>u_heaji</h5>
+                            <p>유혜지</p>
+                        </div>
+                        <div class="follow-button"><button>팔로잉</button></div>
+                    </li>
+                    <li class="follow-list">
+                        <div><img src="images/picture01.jpeg"></div>
+                        <div class="follow-name">
+                            <h5>u_heaji</h5>
+                            <p>유혜지</p>
+                        </div>
+                        <div class="follow-button"><button>팔로잉</button></div>
+                    </li>
+                    <li class="follow-list">
+                        <div><img src="images/picture01.jpeg"></div>
+                        <div class="follow-name">
+                            <h5>u_heaji</h5>
+                            <p>유혜지</p>
+                        </div>
+                        <div class="follow-button"><button>팔로잉</button></div>
+                    </li>
+
+                </ul>
             </div>
-            
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-            
-          </div>
         </div>
-      </div>
+    </div>
+
+
 
 
     <footer class="footer">
@@ -154,6 +187,27 @@
         </div>
     </footer>
 
+    <script>
+        var modal = document.querySelector(".modal");
+        var trigger = document.querySelector(".trigger");
+        var closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        cancel.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+
+    </script>
 
 </body>
 

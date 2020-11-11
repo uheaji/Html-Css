@@ -7,45 +7,117 @@
     
 }
 
-.setting__table{
-    width: 90%;
-    padding-left: 10%;
+.setting__font1{
+    font-size: 20px;
+    font-weight: 800;
+
+    color: #797979;
 }
 
+.setting__font2 > a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    color: #55B8F9;
+}
+
+.setting__font2 {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    color: #55B8F9;
+}
+
+
+.setting__table{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.setting__table > ul > li {
+    display: flex;
+    margin: 15px 0;
+}
+
+
+
 .setting__title01 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 800;
+    color: #494949;
+
     text-align: end;
+    padding-right: 20px;
+    width: 200px;
+    height: 20px;
 }
 
 .setting__title02 {
-    font-size: 7px;
+    font-size: 13px;
     font-weight: 800;
     color: #afafaf;
     width: 60%;
 }
 
 .setting__input {
-    border: 2px solid #ECECEC;
-    border-radius: 1px;
-    height: 35px;
-    width: 70%;
+    border: 3px solid #ECECEC;
+    border-radius: 4px;
+    height: 40px;
+    width: 450px;
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color:  #afafaf;
 }
 
 .setting__input2 {
-    border: 2px solid #ECECEC;
-    border-radius: 1px;
-    height: 70px;
-    width: 70%;
+    border: 3px solid #ECECEC;
+    border-radius: 4px;
+    height: 80px;
+    width: 450px;
+    margin-bottom: 25px;
 }
 
 .setting__item1{
     display: flex;
-    padding: 30px 150px;
+    padding: 20px  150px 0 150px;
+    margin-left: 15%;
 }
 
 .setting__item1 > div >img{  
     width: 50px;
     height: 50px;
     border-radius: 50%;
+
+    margin-right: 20px;
+}
+
+.setting__title-box2 {
+    display: flex;
+    align-items: center;
+    
+}
+.setting__title-box2  > div{
+    margin-left: 10px;
+    width: 240px;
+}
+
+.submit__button {
+    display: flex;
+   margin-left: 200px;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.submit__button > button {
+    background-color: #B2DFFC;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #B2DFFC;
+    padding: 5px 7px;
+
+    font-size: 18px;
+    margin-right: 150px;
 }
