@@ -119,9 +119,14 @@ main{
 }
 
 .section1__picture > div > img {
-    width: 40%;
+    width: 60%;
     height: 100%;
 }
+
+.picture1__01{
+    width: 50%;
+}
+
 
 .card1__name {
     font-size: 13px;
@@ -130,7 +135,10 @@ main{
     width: 60%;
     height: 100%;
   
-
+}
+.card1__name > p {
+    text-align: start;
+    margin-top: 20px;
 }
 
 .section3-container{
