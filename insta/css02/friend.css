@@ -1,0 +1,72 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+
+.grid-container > div {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.grid-container > div .container__hover {
+
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.grid-container > div .container__hover .container__hoverbox {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
+}
+.grid-container > div .container__hover .hover__item {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+ .grid-container > div:hover .container__hover {
+    display: flex;
+} 
+.grid-container .container__hover .hover__item .hover__text{
+    color:white;
+    margin: 0 20px 0 0px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.grid-container .container__hover .hover__item .hover__icon {
+    margin: 0 0 0 20px;
+}
+.grid-container > div > img {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+}
+.grid-container .container__img02 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-container .container__img10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
